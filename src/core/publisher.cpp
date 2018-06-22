@@ -1,9 +1,16 @@
 #include "core/publisher.h"
 
-sidersoft::libbusex::publisher::publisher() {
+template<typename T>
+sidersoft::libbusex::publisher<T>::publisher() {
 
 }
 
-sidersoft::libbusex::publisher::~publisher() {
+template<typename T>
+sidersoft::libbusex::publisher<T>::~publisher() {
 
+}
+
+template<typename T>
+int sidersoft::libbusex::publisher<T>::publish(std::string channel_name, T& t) {
+	return 0;
 }
